@@ -39,7 +39,7 @@ func cleanUpfuncName(funcName string) string {
 }
 
 func (b *BaseSuccFailed) OnError(errCode int32, errMsg string) {
-	wrapSdkLog("","!!!!!!!OnError ", b.uid, b.operationID, b.funcName)
+	wrapSdkLog("", "!!!!!!!OnError ", b.uid, b.operationID, b.funcName)
 	SendOneUserMessage(EventData{cleanUpfuncName(b.funcName), errCode, errMsg, "", b.operationID}, b.uid)
 }
 

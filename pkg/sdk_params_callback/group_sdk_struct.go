@@ -7,7 +7,7 @@ import (
 )
 
 type CreateGroupBaseInfoParam struct {
-	GroupType int32  `json:"groupType"`
+	GroupType int32 `json:"groupType"`
 	SetGroupInfoParam
 }
 

@@ -267,7 +267,7 @@ func DotestMinio() {
 }
 
 func test(storage common.ObjectStorage, callback baseCallback) {
-	dir, newName, err := storage.UploadFile("./main/main.go",  func(progress int) {
+	dir, newName, err := storage.UploadFile("./main/main.go", func(progress int) {
 		if progress == 100 {
 			callback.OnSuccess("")
 		}
